@@ -1,0 +1,762 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.loader {
+  border: 1.6rem solid #f3f3f3;
+  /* Light grey */
+  border-top: 1.6rem solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.navContainer {
+  width: auto;
+  height: 5rem;
+  background-color: #73b1b7;
+  background-color: #00688b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5rem;
+  color: white;
+}
+
+.navContainer h1 {
+  font-size: 2.5rem;
+  margin-left: -1.5rem;
+}
+
+.navContainer .icons {
+  cursor: pointer;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5%;
+}
+
+.navContainer .icons .mail {
+  font-size: 2.7rem;
+}
+
+.sidebarContainer {
+  width: 18rem;
+  height: 92%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #00688b;
+  background-color: #3299cc;
+}
+
+.sidebarContainer .head {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  width: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.sidebarContainer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.sidebarContainer .links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  background-color: #38b0de;
+}
+
+.sidebarContainer .links .link:hover {
+  background-color: #2986aa;
+}
+
+.sidebarContainer .links .link a {
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.sidebarContainer .links .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  background-color: #11a5b6;
+}
+
+.sidebarContainer .links .active:hover {
+  background-color: #2986aa;
+}
+
+.vizContainer {
+  height: 92vh;
+  margin-left: 18rem;
+  width: auto;
+  background-color: #f1f7f8;
+}
+
+.vizContainer .vizHead {
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #026d6d;
+  font-size: 2rem;
+}
+
+.vizContainer .vizscrol {
+  overflow-y: scroll;
+  height: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.vizContainer #loading {
+  overflow-y: scroll;
+  height: 90%;
+  width: 100%;
+  margin-top: -2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vizContainer .vizscrol .vizBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #f1f7f8;
+  padding: 2rem;
+}
+
+.vizContainer .vizscrol .vizBox h1 {
+  margin-top: 2rem;
+  color: #026d6d;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol {
+  height: auto;
+  width: 34%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 1rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizLike {
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  width: 40rem;
+  height: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizLike h1 {
+  margin-top: 1rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizLike #like {
+  margin-right: 2rem;
+  overflow: visible;
+  width: 30rem;
+  height: 18rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizRel {
+  width: 40rem;
+  height: 24rem;
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizRel h1 {
+  margin-top: 1rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizRel #relevance {
+  margin-right: 2rem;
+  overflow: visible;
+  width: 30rem;
+  height: 18rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizTop {
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 40rem;
+  height: 250rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizTop #topic {
+  width: 28rem;
+  height: 235rem;
+  overflow: visible;
+  margin-left: 13rem;
+  margin-top: 2rem;
+}
+
+.vizContainer .vizscrol .vizBox .firstCol .vizTop h1 {
+  margin: 2rem 0;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol {
+  height: auto;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2rem;
+  overflow-x: hidden;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection {
+  height: auto;
+  width: 100%;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizInten {
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  width: 70rem;
+  height: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizInten #inten {
+  width: 60rem;
+  height: 16rem;
+  margin-right: 2rem;
+  overflow: visible;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizInten h1 {
+  margin-top: 3rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizStart {
+  margin: 2rem 0;
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70rem;
+  height: 24rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizStart #startYear {
+  width: 60rem;
+  height: 18rem;
+  overflow: visible;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizStart h1 {
+  margin-top: 1rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizEnd {
+  margin: 2rem 0;
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70rem;
+  height: 30rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizEnd #endYear {
+  width: 65rem;
+  height: 24rem;
+  overflow: visible;
+  margin-right: 2rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .upperSection .vizEnd h1 {
+  margin-top: 1rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection .vizCon {
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 70rem;
+  height: 160rem;
+  margin: 2rem 0;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection .vizCon #country {
+  width: 60rem;
+  height: 150rem;
+  overflow: visible;
+  margin-left: 22rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection .vizCon h1 {
+  margin: 3rem 0;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection .vizRegion {
+  background-color: #d4e5eb;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+          box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(189, 188, 188, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 70rem;
+  height: 70rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection .vizRegion #region {
+  width: 50rem;
+  height: 60rem;
+  overflow: visible;
+  margin-left: 11rem;
+}
+
+.vizContainer .vizscrol .vizBox .secondCol .lowerSection .vizRegion h1 {
+  margin: 3rem 0;
+}
+
+.tableContainer {
+  height: 92vh;
+  margin-left: 18rem;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #f1f7f8;
+}
+
+.tableContainer .h1 {
+  margin-top: 1.5rem;
+  color: #026d6d;
+  font-size: 2.5rem;
+}
+
+.tableContainer #resuts {
+  margin-top: 1rem;
+  color: #1ea7ac;
+}
+
+.tableContainer #loading {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tableContainer .inputsDiv {
+  margin-top: 1.5rem;
+  width: 98%;
+  background-color: #1c85eed3;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.1rem #37fdfd63;
+          box-shadow: 0 0.3rem 0.5rem 0.1rem #37fdfd63;
+  border-radius: 0.5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tableContainer .inputsDiv input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  border-bottom: 0.1rem solid white;
+  width: 12%;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.tableContainer .inputsDiv input::-webkit-input-placeholder {
+  color: white;
+}
+
+.tableContainer .inputsDiv input:-ms-input-placeholder {
+  color: white;
+}
+
+.tableContainer .inputsDiv input::-ms-input-placeholder {
+  color: white;
+}
+
+.tableContainer .inputsDiv input::placeholder {
+  color: white;
+}
+
+.tableContainer table {
+  width: 95%;
+  margin-top: 1rem;
+}
+
+.tableContainer table .heading {
+  background-color: #33a1de;
+  -webkit-box-shadow: 0 0.3rem 0.5rem 0.1rem #37fdfd63;
+          box-shadow: 0 0.3rem 0.5rem 0.1rem #37fdfd63;
+  font-size: 2rem;
+}
+
+.tableContainer table .heading th {
+  width: 12%;
+}
+
+.tableContainer .tableBox {
+  height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.tableContainer .tableBox h1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.tableContainer .tableBox .theTable {
+  width: 95%;
+  margin-top: -0.01rem;
+  margin-left: 3.5rem;
+}
+
+.tableContainer .tableBox .theTable tr {
+  width: 100%;
+}
+
+.tableContainer .tableBox .theTable tr td {
+  width: 15%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=App.css.map */
